@@ -32,7 +32,7 @@ const App = () => {
               color="textPrimary"
               gutterBottom
             >
-              Photo Album
+              Photo
             </Typography>
           </Container>
         </div>
