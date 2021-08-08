@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Typography,
   AppBar,
+  Button,
   Card,
   CardActions,
   CardContent,
@@ -32,8 +33,32 @@ const App = () => {
               color="textPrimary"
               gutterBottom
             >
-              Photo
+              Photo Album
             </Typography>
+            <Typography
+              variant="h5"
+              align="center"
+              color="textSecondary"
+              paragraph
+            >
+              Hello everyone this is a photo album and I am here to test out the
+              use cases for Material UI, as well as test out the GitHub
+              repository features in VS Code.
+            </Typography>
+            <div>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button variant="contained" color="primary">
+                    See my photos
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary">
+                    Secondary Action
+                  </Button>
+                </Grid>
+              </Grid>
+            </div>
           </Container>
         </div>
       </main>
