@@ -13,9 +13,8 @@ import {
   Container,
 } from '@material-ui/core';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({}));
+import CardLayout from './CardLayout';
+import useStyles from './styles';
 
 const App = () => {
   const classes = useStyles();
@@ -25,7 +24,7 @@ const App = () => {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <PhotoCameraIcon fontSize="large" />
+          <PhotoCameraIcon className={classes.icon} />
           <Typography variant="h6">Photo Album</Typography>
         </Toolbar>
       </AppBar>
@@ -50,7 +49,7 @@ const App = () => {
               use cases for Material UI, as well as test out the GitHub
               repository features in VS Code.
             </Typography>
-            <div>
+            <div className={classes.button}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
@@ -66,6 +65,7 @@ const App = () => {
             </div>
           </Container>
         </div>
+        <CardLayout />
       </main>
     </>
   );
