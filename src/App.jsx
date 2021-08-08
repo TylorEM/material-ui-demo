@@ -13,8 +13,13 @@ import {
   Container,
 } from '@material-ui/core';
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({}));
 
 const App = () => {
+  const classes = useStyles();
+
   return (
     <>
       <CssBaseline />
@@ -25,7 +30,7 @@ const App = () => {
         </Toolbar>
       </AppBar>
       <main>
-        <div>
+        <div className={classes.container}>
           <Container maxWidth="sm">
             <Typography
               variant="h2"
